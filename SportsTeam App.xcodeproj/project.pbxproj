@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A19D291B28E7866300D744DD /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D291A28E7866300D744DD /* TeamTableViewCell.swift */; };
 		A1E7035328DFCD05008E8408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7035228DFCD05008E8408 /* AppDelegate.swift */; };
 		A1E7035528DFCD05008E8408 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7035428DFCD05008E8408 /* SceneDelegate.swift */; };
-		A1E7035728DFCD05008E8408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7035628DFCD05008E8408 /* ViewController.swift */; };
+		A1E7035728DFCD05008E8408 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7035628DFCD05008E8408 /* TeamDetailViewController.swift */; };
 		A1E7035A28DFCD05008E8408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E7035828DFCD05008E8408 /* Main.storyboard */; };
 		A1E7035C28DFCD07008E8408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E7035B28DFCD07008E8408 /* Assets.xcassets */; };
 		A1E7035F28DFCD07008E8408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E7035D28DFCD07008E8408 /* LaunchScreen.storyboard */; };
@@ -19,10 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A19D291A28E7866300D744DD /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		A1E7034F28DFCD05008E8408 /* SportsTeam App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SportsTeam App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E7035228DFCD05008E8408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E7035428DFCD05008E8408 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1E7035628DFCD05008E8408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1E7035628DFCD05008E8408 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
 		A1E7035928DFCD05008E8408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1E7035B28DFCD07008E8408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1E7035E28DFCD07008E8408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A19D291C28E7868000D744DD /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				A19D291A28E7866300D744DD /* TeamTableViewCell.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
 		A1E7034628DFCD05008E8408 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				A1E7036628DFCD2E008E8408 /* Resources */,
-				A1E7036828DFCD77008E8408 /* Controllers */,
 				A1E7036728DFCD5A008E8408 /* Storyboards */,
 				A1E7036C28DFCDE9008E8408 /* Model */,
+				A1E7036828DFCD77008E8408 /* Controllers */,
 			);
 			path = "SportsTeam App";
 			sourceTree = "<group>";
@@ -93,8 +103,9 @@
 		A1E7036828DFCD77008E8408 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A1E7036928DFCD98008E8408 /* View Controller */,
 				A1E7036F28DFCE2B008E8408 /* Model Controller */,
+				A1E7036928DFCD98008E8408 /* View Controller */,
+				A19D291C28E7868000D744DD /* Custom View */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,8 +113,8 @@
 		A1E7036928DFCD98008E8408 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A1E7035628DFCD05008E8408 /* ViewController.swift */,
 				A1E7037028DFD0C6008E8408 /* TeamListTableViewController.swift */,
+				A1E7035628DFCD05008E8408 /* TeamDetailViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -198,7 +209,8 @@
 				A1E7036B28DFCDE2008E8408 /* Team.swift in Sources */,
 				A1E7036E28DFCE24008E8408 /* TeamController.swift in Sources */,
 				A1E7037128DFD0C6008E8408 /* TeamListTableViewController.swift in Sources */,
-				A1E7035728DFCD05008E8408 /* ViewController.swift in Sources */,
+				A1E7035728DFCD05008E8408 /* TeamDetailViewController.swift in Sources */,
+				A19D291B28E7866300D744DD /* TeamTableViewCell.swift in Sources */,
 				A1E7035328DFCD05008E8408 /* AppDelegate.swift in Sources */,
 				A1E7035528DFCD05008E8408 /* SceneDelegate.swift in Sources */,
 			);
