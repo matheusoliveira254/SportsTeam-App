@@ -13,14 +13,9 @@ class TeamTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfPlayersCellLabel: UILabel!
     @IBOutlet weak var rankingCellLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(with team: Team) {
+        teamNameCellLabel.text = team.name
+        numberOfPlayersCellLabel.text = "\(team.playerCount)"
+        rankingCellLabel.text = "\(team.ranking)"
     }
 }

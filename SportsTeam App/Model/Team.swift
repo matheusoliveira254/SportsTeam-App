@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Team {
+class Team: Codable {
     let id: UUID
     var name: String
     var ranking: Int
