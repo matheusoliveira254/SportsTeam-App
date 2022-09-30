@@ -8,9 +8,13 @@
 import UIKit
 
 class TeamDetailViewController: UIViewController {
+    //MARK: - IBOutlets
     @IBOutlet weak var teamNameTextField: UITextField!
     @IBOutlet weak var teamRankTextField: UITextField!
     @IBOutlet weak var playerCountTextField: UITextField!
+    
+    //MARK: - Properties
+    var teamToReceive: Team?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,4 @@ class TeamDetailViewController: UIViewController {
     }
     @IBAction func deleteButtonTapped(_ sender: UIButton) {
     }
-    
 }
-
