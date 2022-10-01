@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -76,11 +75,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sports Team" id="Kex-bC-HTq">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="vi2-KA-1BZ">
-                            <color key="tintColor" name="AccentColor"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="MtA-uJ-Ewy">
                             <connections>
-                                <action selector="addButtonTapped:" destination="Uzg-ug-2al" id="e0r-dP-ub5"/>
-                                <segue destination="1Du-my-oOC" kind="show" id="mVb-8M-jPD"/>
+                                <action selector="addButtonTapped:" destination="Uzg-ug-2al" id="VPJ-KX-tqN"/>
+                                <segue destination="1Du-my-oOC" kind="show" id="zP7-Pp-dM2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -109,7 +107,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PQ4-k5-EMV">
                                         <rect key="frame" x="59.5" y="0.0" width="314.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -125,7 +123,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9HI-Jy-VaO">
                                         <rect key="frame" x="76" y="0.0" width="298" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -141,7 +139,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkF-nd-o9m">
                                         <rect key="frame" x="112" y="0.0" width="262" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -229,9 +227,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

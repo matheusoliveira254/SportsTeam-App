@@ -43,14 +43,16 @@ class TeamDetailViewController: UIViewController {
         }
         navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func clearButtonTapped(_ sender: UIButton) {
             teamNameTextField.text = ""
             teamRankTextField.text = ""
             playerCountTextField.text = ""
         
     }
-//    @IBAction func deleteButtonTapped(_ sender: UIButton) {
-//        let index = shared.teams[indexPath.row]
-//        shared.deleteTeam(teamToDelete: index)
-//    }
+    @IBAction func deleteButtonTapped(_ sender: UIButton) {
+        guard let team = teamToReceive else {return}
+        shared.deleteTeam(teamToDelete: team)
+        navigationController?.popViewController(animated: true)
+    }
 }

@@ -15,7 +15,7 @@ class TeamTableViewCell: UITableViewCell {
     
     func configureCell(with team: Team) {
         teamNameCellLabel.text = team.name
-        numberOfPlayersCellLabel.text = team.playerCount
-        rankingCellLabel.text = team.ranking
+        numberOfPlayersCellLabel.text = "Player Count: \(team.playerCount)"
+        rankingCellLabel.text = "#\(team.ranking)"
     }
 }
