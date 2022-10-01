@@ -21,13 +21,13 @@ class TeamController {
     }
     
     //MARK: - CRUD
-    func createTeam(name: String, ranking: Int, playerCount: Int) {
+    func createTeam(name: String, ranking: String, playerCount: String) {
         let teamCreate = Team(name: name, ranking: ranking, playerCount: playerCount)
         teams.append(teamCreate)
         save()
     }
     
-    func updateTeam(teamToUpdate: Team, newName: String, newRanking: Int, newPlayerCount: Int) {
+    func updateTeam(teamToUpdate: Team, newName: String, newRanking: String, newPlayerCount: String) {
         teamToUpdate.name = newName
         teamToUpdate.ranking = newRanking
         teamToUpdate.playerCount = newPlayerCount

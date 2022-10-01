@@ -15,17 +15,42 @@ class TeamDetailViewController: UIViewController {
     
     //MARK: - Properties
     var teamToReceive: Team?
+    var shared = TeamController.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateUI()
+    }
+    
+    //MARK: - Methods
+    func updateUI() {
+        guard let teamToReceive = teamToReceive else {return}
+        teamNameTextField.text = teamToReceive.name
+        teamRankTextField.text = teamToReceive.ranking
+        playerCountTextField.text = teamToReceive.playerCount
+
     }
 
 //MARK: - IBActions
     @IBAction func saveButtonTapped(_ sender: UIButton) {
+        guard let name = teamNameTextField.text,
+              let rank = teamRankTextField.text,
+              let playerCount = playerCountTextField.text else {return}
+        if let teamToReceive = teamToReceive {
+            shared.updateTeam(teamToUpdate: teamToReceive, newName: name, newRanking: rank, newPlayerCount: playerCount)
+        } else {
+            shared.createTeam(name: name, ranking: rank, playerCount: playerCount)
+        }
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func clearButtonTapped(_ sender: UIButton) {
+            teamNameTextField.text = ""
+            teamRankTextField.text = ""
+            playerCountTextField.text = ""
+        
     }
-    @IBAction func deleteButtonTapped(_ sender: UIButton) {
-    }
+//    @IBAction func deleteButtonTapped(_ sender: UIButton) {
+//        let index = shared.teams[indexPath.row]
+//        shared.deleteTeam(teamToDelete: index)
+//    }
 }

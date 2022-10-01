@@ -10,10 +10,10 @@ import Foundation
 class Team: Codable {
     let id: UUID
     var name: String
-    var ranking: Int
-    var playerCount: Int
+    var ranking: String
+    var playerCount: String
     
-    init(id: UUID = UUID(), name: String, ranking: Int, playerCount: Int) {
+    init(id: UUID = UUID(), name: String, ranking: String, playerCount: String) {
         self.name = name
         self.ranking = ranking
         self.playerCount = playerCount
